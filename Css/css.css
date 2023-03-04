@@ -1,0 +1,572 @@
+.root {
+    --green:#00AB38;
+    --black:#333;
+    --grey:#A5A5A5;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Inter','Jura', "sans-serif", "Arial";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    flex-grow: 1;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-ishlov {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.apteka-img {
+    display: flex;
+    align-items: center;
+}
+.logo-img {
+    margin-right: 8px;
+}
+.header-logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.075px;
+    color: var(--black);
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.5s opacity ease;
+}
+.header-logo:hover {
+    opacity: 0.6;
+}
+.kata {
+    border: #000 1px solid;
+    border: 0.5px solid #00AB38;
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+.katalog {
+    text-decoration: none;
+    color:#00AB38;
+}
+.header-ikonkalar {
+    display: flex;
+}
+.header-label {
+    width: 100%;
+    max-width: 493px;
+    margin-right: 12px;
+}
+.search {
+    width: 493px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    padding-top: 13px  ;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid #00AB38;
+}
+.fa-magnifying-glass {
+    border-radius:8px;
+    margin: 0;
+    background-color: #00AB38;
+    color:#fff;
+    padding: 13px;
+}
+.header-ikon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-ikon:not(:last-child) {
+    margin-right: 16px;
+}
+.fa-chart-simple {
+    margin-bottom: 5px;
+}
+.ikon-poro {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0;
+}
+.fa-sharp {
+    margin-bottom: 5px;
+}
+.fa-light {
+    margin-bottom: 5px;
+}
+.chiqish {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 12px 32px;
+    border: transparent;
+    background-color: #00AB38;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s opacity ease;
+}
+.chiqish:hover {
+    opacity: 0.6;
+}
+.hero {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+.hero-nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.hero-ul {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-li {
+    font-size: 12px;
+    list-style: none;
+}
+.hero-li:not(:last-child) {
+    margin-right: 33px;
+} 
+.hero-nav-link {
+    font-weight: 500;
+    line-height: 15px;
+    color: #333;
+    text-decoration: none;
+}
+/* Main  */
+.main-bosh-quti {
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 56px;
+    box-shadow: 3px 4px 9px 4px #93939340;
+}
+.main-bosh-text {
+    margin-left: 42px;
+}
+.main-bosh-h2 {
+    width: 100%;
+    max-width: 632px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 24px;
+}
+.main-bosh-poro {
+    width: 100%;
+    max-width: 656px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.main-bosh-link {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 12px 32px;
+    background-color: #00AB38;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s opacity ease;
+
+}
+.main-bosh-link:hover {
+    opacity: 0.6;
+}
+.main-bosh-img {
+    margin-left: 40px;
+}
+.apteka-link {
+    display:inline;
+    background-color: #00AB38;
+    padding: 12px 32px;
+    border: transparent;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.5s opacity ease;
+    margin-bottom: 20px;
+}
+
+.apteka-link:hover {
+    opacity: 0.6;
+}
+.takliflar {
+    margin-bottom: 50px;
+}
+.taklif {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #333;
+    margin-bottom: 32px;
+}
+.qutilar {
+    display: flex;
+}
+.quti:not(:last-child) {
+    margin-right: 20px;
+}
+.quti {
+    width: 100%;
+    width: 295px;
+    box-shadow: 3px 4px 9px 4px #93939340;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.quti-img {
+    padding-top: 20px;
+    margin-bottom: 12px;
+}
+.main-gilistin-h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: #333;
+}
+.narx {
+    display: flex;
+    margin-bottom: 16px;
+}
+.apteka-naxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.main-narx-poro {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.narx-span {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #00AB38;
+    
+}
+.ortacha-narx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orta-narx-poro {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A5A5A5;
+    margin-bottom: 4px;
+}
+.orta-narx-span {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #A5A5A5;
+}
+.main-quti-savat {
+    margin-bottom: 40px;
+}
+.kategoriya {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 32px;
+}
+.main-dorilar-tartiblash {
+    margin-bottom: 100px;
+}
+.dorilar-img {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+}
+.rasm-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #3B90BF 0%, #48FFBD 100%),
+    linear-gradient(0deg, #3BBF67 0%, #8EFFB3 100%),
+    linear-gradient(0deg, #FFFFFF,#FFFFFF) ;
+}
+.item-1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.dorilar-poro {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+/* Brendlar  */
+.brendlar {
+    margin-bottom: 100px;
+}
+.main-brend-h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 32px;
+    color: #333;
+}
+.brendlar-img {
+    display: flex;
+    align-items: center;
+}
+.bepanten {
+    padding: 12px 18px;
+    box-shadow: 3px 4px 9px 4px #93939340;
+    margin-right: 20px;
+}
+.teraflexs {
+    padding: 31px 18px;
+    box-shadow: 3px 4px 9px 4px #93939340;
+}
+.teraflexs:not(:last-child) {
+    margin-right: 20px;
+}
+.dorilar-imglar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.rasm-textlar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #3B90BF 0%, #48FFBD 100%),
+    linear-gradient(0deg, #3BBF67 0%, #8EFFB3 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.item-9 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+/* Raqamlar */
+.raqam-container {
+    display: flex;
+    justify-content: space-between;
+}
+.main-market-h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #333;
+    margin-bottom: 79px;
+}
+.raqamlar {
+    width: 100%;
+    min-width: 505px;
+    padding-bottom: 179px;
+    margin-right: 89px;
+}
+.birinchi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bir-img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+}
+.raqam-poroo {
+    width: 100%;
+    width: 485px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.raqam-poro {
+    width: 100%;
+    width: 505px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.akaxon {
+    height: 568px;
+    width: 568px;
+}
+/* Footer */
+.footer-container {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-nom {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    margin-bottom: 13px;
+}
+.footer-logoo:hover {
+    opacity: 0.6;
+}
+.logo-img {
+    width: 42px;
+    height: 42px;
+}
+.footer-logoo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.075px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s opacity ease;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-li {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.footer-li:not(:last-child) {
+    margin-bottom: 16px;
+}
+.ikkii {
+    width: 208px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.li-ikki {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    list-style: none;
+    margin-bottom: 8px;
+}
+.korab {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #333;
+}
+.ijtimoiy-tarmoqlar {
+    display: flex;
+}
+.twitter {
+    width: 32px;
+    height: 32px;
+    list-style: none;
+    margin-bottom: 12px;
+    transition: 0.5s opacity ease;
+}
+.twitter:not(:last-child) {
+    margin-right: 32px;
+}
+.twitter:hover {
+    opacity: 0.6;
+}
+.li-uchch {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #333;
+    list-style: none;
+    margin-bottom: 3px;
+}
+.li-uch {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #333;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.nomer {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #333;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.tarmoqlar-ikki {
+    display: flex;
+}
+.veka {
+    list-style: none;
+    transition: 0.5s opacity ease;
+}
+.vekka {
+    color: #00AB38;
+}
+.veka:not(:last-child) {
+    margin-right: 32px;
+}
+.veka:hover {
+    opacity: 0.6;
+}
